@@ -1,87 +1,51 @@
 <template>
-  <v-layout
-  >
-     <v-img
-        :src="require('@/assets/img/bg_index.png')"
-      >
-      </v-img>
-      <!-- <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
+  <v-app>
+    <v-img :src="require('@/assets/img/bg_index.png')">
+      <v-container fluid grid-list-xl>
+        <v-layout justify-space-between>
+          <v-flex xs12 md2 class="pa-5">
+            <v-img :src="require('@/assets/img/logo.png')"/>
+          </v-flex>
+        </v-layout>
+        <v-layout>
+          <v-flex>
+            <v-card
+              style="opacity:0.4; filter:alpha(opacity='70'); MozOpacity:0.7;  KhtmlOpacity:0.7;   background-color:black;"
+              class="mx-auto"
+              max-width="550"
+              outlined
             >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card> -->
-  </v-layout>
+              <v-list-item three-line>
+                <v-list-item-content>
+                  <!-- <div class="overline mb-4">OVERLINE</div> -->
+                  <v-list-item-title class="headline mb-3">เพื่อสุขภาพ...เพื่อรักนิรันดร์<br>Level up your life, Level up your love.</v-list-item-title>
+                  <!-- <v-list-item-subtitle>เพื่อสุขภาพ...เพื่อรักนิรันดร์<br>Level up your life, Level up your love.</v-list-item-subtitle> -->
+                </v-list-item-content>
+                <v-list-item-avatar
+                  tile
+                  size="90"
+                ></v-list-item-avatar>
+              </v-list-item>
+              <v-card-actions>
+                การใช้ชีวิตของคนเราในปัจจุบันมักประสบกับ<br>
+                ภาวะเร่งรีบ แช่งขัน และตึงเครียดตลอดเวลา<br>
+                จึงไม่ใช่เรื่องง่ายที่เราจะดูแลสุขภาพตัวเอง<br>
+                ครอบครัว และการงานไปพร้อมกัน
+                <v-img width="130" style="opacity:none;" :src="require('@/assets/img/PIC-01.png')"/>
+              </v-card-actions>
+            </v-card>
+          </v-flex>  
+        </v-layout>     
+      </v-container>
+    </v-img>
+  </v-app>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
-
 export default {
   components: {
-    Logo,
-    VuetifyLogo
+    
   }
 }
 </script>
+
